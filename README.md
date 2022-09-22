@@ -17,4 +17,50 @@ The alternative hypothesis that the factors of vehicle length, vehicle weight, s
 
 ![Multiple Regression](https://github.com/josephrodini/MechaCar_Statistical_Analysis/blob/main/Images/lmMPG.PNG?raw=true)
 
+We can conclude several things from this analysis:
+
+- Two variables do provide statistically significant prediction of MPG, namely vehicle length (t=9.56, p<0.001) and ground clearance (t=6.55, p<0.001). Vehicle weight (t=1.81, p=0.08) and spoiler angle (t=1.03, p=0.31) do not predict MPG at a level of significance.
+
+- The hypothesis test of the slope proved significant (F=22.07, p<0.001), therefore we can say that the slope cannot be considered to be zero.
+
+- The high R-squared value (R-squared=0.71) tells us that 71% of the variance in MPH is explained by the four variables. Therefore we can say that the linear mondel does predict MPH of MechaCar effectively.
+
+## Summary Statistics on Suspension Coils
+
+There is a requirement that the variance of the suspension coils for MechaCar must not exceed 100 pounds per square inch. In order to determine whether this requirement is met, summary statistics were gathered for MechaCar for both the cars from all the lots combined and for the cars from each lot individually. See the summary tables below:
+
+- Table for lots in total
+
+![SummaryTotal](https://github.com/josephrodini/MechaCar_Statistical_Analysis/blob/main/Images/total_summary.PNG?raw=true)
+
+
+- Table for each lot individually
+
+![SummaryLot](https://github.com/josephrodini/MechaCar_Statistical_Analysis/blob/main/Images/lot_summary.PNG?raw=true)
+
+
+Reading the tables, we can see that, overall, the cars' variance clocks in under 100 (62.29). However, breaking down variance by lot shows wildly different variances. The variances for lot one (0.98) and lot two (7.47) are very small, well under 100, while the variance for lot three (170.29) is much higher, and well over 100.
+
+## T-Tests on Suspension Coils
+
+The alternative hypothesis that the PSI of the MechaCars differ from the PSI of the population was tested with t-tests. See the results below:
+
+- T-test comparing all lots together versus population
+
+![PSITogether](https://github.com/josephrodini/MechaCar_Statistical_Analysis/blob/main/Images/ttestall.PNG?raw=true)
+
+
+- T-tests comparing each lot inidividually versus population
+
+![PSIIndividual](https://github.com/josephrodini/MechaCar_Statistical_Analysis/blob/main/Images/ttestsbylot.PNG?raw=true)
+
+
+Based on the above output, we can conclude the following:
+
+- Overall, all the cars' PSI do not differ significantly from the population PSI (t=-1.89, p=0.06). We therefore do not reject the null hypothesis.
+
+- By lot, lot one (t=0, p=1) and lot two (t=0.52, p=0.60) do not have PSIs that are significantly different from that of the population. However, lot three's PSI does significantly differ (t=-2.09, p=0.04). 
+
+
+
 
