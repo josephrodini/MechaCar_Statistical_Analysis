@@ -61,6 +61,30 @@ Based on the above output, we can conclude the following:
 
 - By lot, lot one (t=0, p=1) and lot two (t=0.52, p=0.60) do not have PSIs that are significantly different from that of the population. However, lot three's PSI does significantly differ (t=-2.09, p=0.04). 
 
+## Study Design: MechaCar vs Competition
 
+It is important to measure MechaCar against its competitors. Therefore the following study was designed:
+
+### Metric to Test
+
+We will examine MechaCar's horsepower with that of the competition: is MechaCar's horsepower different from that of its competitors?
+
+### Hypotheses
+
+The null hypothesis would be as follows: There is no difference in horsepower between MechaCar and its competitors. In other words, no statitstical difference will be found between MechaCar and the other makers examined.
+
+The alternative hypothesis would be as follows: There is a difference in horsepower between MechaCar and its competitors. In other words, the horsepower of MechaCar will either be significantly higher or lower than another maker examined.
+
+### Statistical Test
+
+A separate two sample t-test would be needed to compare MechaCar to each competitor (i.e., MechaCar vs. Honda, MechaCar vs. Toyota, etc.). One may think that one ANOVA would suffice, but an ANOVA is an omnibus test and could prove significant even if MechaCar does not differ from any competitors (e.g., in the case that the competitors differ from each other). Only separate t-tests will definitively answer the research question.
+
+### Data Needed
+
+A sample of the horsepower for all the models MechaCar offers would be needed, as well as the horsepower for all the models for each company MechaCar will be compared against.
+
+## Conclusion
+
+Using statistics in the R programming language, we are able to gain insights into the operations of AutosRUs that help them plan for the future.
 
 
